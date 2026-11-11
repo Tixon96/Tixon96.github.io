@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Elitserian</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+
+            /* --- Растягиваем фон на весь экран --- */
+            background-image: url('Kubok_fon.jpg');
+            background-size: cover;        /* Растянуть на весь экран */
+            background-position: center;   /* Центрировать */
+            background-repeat: no-repeat;  /* Не повторять (не делить на 4 части) */
+            background-attachment: fixed;  /* Фон зафиксирован */
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar md:navbar-expand bg-1" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dark navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarDarkDrawer" aria-controls="navbarDarkDrawer" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarDarkDrawer" aria-labelledby="navbarDarkDrawerLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarDarkDrawerLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body mb-2 md:mb-0">
+        <ul class="nav navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="bandy.html">Бэнди</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Суперлига</a>
+          </li>
+        </ul>
+        <form class="hstack gap-2" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search"/>
+          <button class="btn-solid btn-icon theme-secondary" type="submit">
+            <svg class="bi" width="16" height="16"><use href="#search" /></svg>
+          </button>
+        </form>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+<h3>Таблицы Суперлиги сезонов  26/27 - 24/25(Мужчины)</h3>
+<div id="carouselStackedMen" class="carousel slide">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <button class="btn btn-sm btn-outline-light" type="button" data-bs-target="#carouselStackedMen" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="btn btn-sm btn-outline-light" type="button" data-bs-target="#carouselStackedMen" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <div class="carousel-inner rounded-5">
+    <div class="carousel-item active">
+      <img src="Superka26_27.png" class="d-block w-25" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Superka25_26.png" class="d-block w-25" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="Superka24_25.png" class="d-block w-25" alt="...">
+    </div>
+  </div>
+</div>
+
+
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+</body>
+</html>

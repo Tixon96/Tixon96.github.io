@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 6 Alpha CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+    body {
+      background-color: #1a1a1a; /* тёмно-серый */
+      color: #ffffff;            /* белый текст */
+    }
+  </style>
+  </head>
+
+
+  
+<body>
+    <nav class="navbar lg:navbar-expand bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavMenu" aria-labelledby="navbarNavMenuLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarNavMenuLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fotball.html">Leagues</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+<br>
+<br>
+
+<!-- Контейнер для карточек в одну строку -->
+<div class="d-flex flex-row gap-3 px-3 mb-4">
+  
+  <!-- Левая карточка (Серия А) -->
+  <div class="card" style="flex: 0 0 30%;">
+    <!-- Картинка уменьшена и отцентрирована -->
+    <div class="text-center pt-3">
+      <img src="LALogo.jpg" alt="..." style="max-width: 30%; height: 80%;">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title text-center">Серия A</h5>
+      <p class="card-text">профессиональная футбольная лига, высший дивизион системы футбольных лиг Италии, является одним из самых сильных футбольных дивизионов в мире.</p>
+      <a href="https://ru.wikipedia.org/wiki/Чемпионат_Италии_по_футболу_(Серия_A)" class="btn btn-primary">Подробнее</a>
+    </div>
+  </div>
+
+  <!-- Правая карточка (Топ бомбардиров Серии А) -->
+  <div class="card" style="flex: 1;">
+    <div class="card-body">
+      <h5 class="card-title">Топ бомбардиров</h5>
+      
+      <table class="table table-sm table-hover mb-0 mt-3">
+        <thead>
+          <tr>
+            <th scope="col">Место</th>
+            <th scope="col">Игрок</th>
+            <th scope="col">Клуб</th>
+            <th scope="col">Голы</th>
+            <th scope="col">Пенальти</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Гуштаву Варела</td>
+            <td>Монца</td>
+            <td>9</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Дониэлл Мален</td>
+            <td>Рома</td>
+            <td>8</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Антонио Раймондо</td>
+            <td>Фрозиноне</td>
+            <td>8</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Никола Крстович</td>
+            <td>Аталанта</td>
+            <td>6</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Анастасиос Дувикас</td>
+            <td>Комо</td>
+            <td>5</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">6</th>
+            <td>Адриен Рабьо</td>
+            <td>Милан</td>
+            <td>5</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">7</th>
+            <td>Маркус Тюрам</td>
+            <td>Интер</td>
+            <td>5</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th scope="row">8</th>
+            <td>Джакомо Кало</td>
+            <td>Фрозиноне</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">9</th>
+            <td>Даниэль Мальдини</td>
+            <td>Кальяри</td>
+            <td>5</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <th scope="row">10</th>
+            <td>Че Адамс</td>
+            <td>Торино</td>
+            <td>4</td>
+            <td>0</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<hr>
+<hr>
+
+<!-- Второй навбар с сезонами -->
+<nav class="navbar lg:navbar-expand bg-1 fg-2 mb-3">
+  <div class="container-fluid">
+    <div class="navbar-nav flex-row gap-2">
+      <a class="nav-link active" aria-current="page" href="#">Сезоны</a>
+      <a class="nav-link" href="sa25_26.html">2025/2026</a>
+      <a class="nav-link" href="sa24_25.html">2024/2025</a>
+      <a class="nav-link" href="sa23_24.html">2023/2024</a>
+      <a class="nav-link" href="sa22_23.html">2022/2023</a>
+    </div>
+  </div>
+</nav>
+
+<small>Сезон 2026/2027</small>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Место</th>
+      <th>Команда</th>
+      <th>Игры</th>
+      <th>В</th>
+      <th>Н</th>
+      <th>П</th>
+      <th>Мячи</th>
+      <th>Очки</th>
+      <th>Последние матчи</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 1-4: зелёные -->
+    <tr>
+      <th scope="row" class="theme-success">1</th>
+      <td class="theme-success">Лацио</td>
+      <td class="theme-success">10</td>
+      <td class="theme-success">9</td>
+      <td class="theme-success">1</td>
+      <td class="theme-success">0</td>
+      <td class="theme-success">24-8</td>
+      <td class="theme-success">28</td>
+      <td class="theme-success">ВВВВВ</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-success">2</th>
+      <td class="theme-success">Интер</td>
+      <td class="theme-success">10</td>
+      <td class="theme-success">8</td>
+      <td class="theme-success">1</td>
+      <td class="theme-success">1</td>
+      <td class="theme-success">26-13</td>
+      <td class="theme-success">25</td>
+      <td class="theme-success">ВВВПП</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-success">3</th>
+      <td class="theme-success">Рома</td>
+      <td class="theme-success">10</td>
+      <td class="theme-success">7</td>
+      <td class="theme-success">3</td>
+      <td class="theme-success">0</td>
+      <td class="theme-success">28-10</td>
+      <td class="theme-success">24</td>
+      <td class="theme-success">НВВВВ</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-success">4</th>
+      <td class="theme-success">Комо</td>
+      <td class="theme-success">10</td>
+      <td class="theme-success">7</td>
+      <td class="theme-success">2</td>
+      <td class="theme-success">1</td>
+      <td class="theme-success">18-8</td>
+      <td class="theme-success">23</td>
+      <td class="theme-success">НВВВП</td>
+    </tr>
+
+    <!-- 5: синяя -->
+    <tr>
+      <th scope="row" class="theme-primary">5</th>
+      <td class="theme-primary">Милан</td>
+      <td class="theme-primary">10</td>
+      <td class="theme-primary">6</td>
+      <td class="theme-primary">3</td>
+      <td class="theme-primary">1</td>
+      <td class="theme-primary">21-12</td>
+      <td class="theme-primary">21</td>
+      <td class="theme-primary">НВППВ</td>
+    </tr>
+
+    <!-- 6-17: без раскраски -->
+    <tr>
+      <th scope="row">6</th>
+      <td>Фрозиноне</td>
+      <td>10</td>
+      <td>6</td>
+      <td>2</td>
+      <td>2</td>
+      <td>24-14</td>
+      <td>20</td>
+      <td>ППВВВ</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Ювентус</td>
+      <td>10</td>
+      <td>5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>13-10</td>
+      <td>17</td>
+      <td>НВВПВ</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Наполи</td>
+      <td>10</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>17-13</td>
+      <td>14</td>
+      <td>ППВПП</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Болонья</td>
+      <td>10</td>
+      <td>4</td>
+      <td>2</td>
+      <td>4</td>
+      <td>14-13</td>
+      <td>14</td>
+      <td>ВВППП</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Торино</td>
+      <td>10</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+      <td>14-16</td>
+      <td>13</td>
+      <td>ПППВВ</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Дженоа</td>
+      <td>10</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+      <td>10-14</td>
+      <td>13</td>
+      <td>ВПППВ</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Кальяри</td>
+      <td>10</td>
+      <td>4</td>
+      <td>1</td>
+      <td>5</td>
+      <td>9-15</td>
+      <td>13</td>
+      <td>ППППП</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>Аталанта</td>
+      <td>10</td>
+      <td>3</td>
+      <td>2</td>
+      <td>5</td>
+      <td>16-20</td>
+      <td>11</td>
+      <td>ВПВПП</td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Лечче</td>
+      <td>10</td>
+      <td>3</td>
+      <td>0</td>
+      <td>7</td>
+      <td>11-21</td>
+      <td>9</td>
+      <td>ППППП</td>
+    </tr>
+    <tr>
+      <th scope="row">15</th>
+      <td>Парма</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6</td>
+      <td>8-15</td>
+      <td>8</td>
+      <td>ППППВ</td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>Фиорентина</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6</td>
+      <td>15-23</td>
+      <td>8</td>
+      <td>ППППВ</td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>Сассуоло</td>
+      <td>10</td>
+      <td>2</td>
+      <td>2</td>
+      <td>6</td>
+      <td>16-26</td>
+      <td>8</td>
+      <td>НПППП</td>
+    </tr>
+
+    <!-- 18-20: красные -->
+    <tr>
+      <th scope="row" class="theme-danger">18</th>
+      <td class="theme-danger">Монца</td>
+      <td class="theme-danger">10</td>
+      <td class="theme-danger">2</td>
+      <td class="theme-danger">1</td>
+      <td class="theme-danger">7</td>
+      <td class="theme-danger">17-24</td>
+      <td class="theme-danger">7</td>
+      <td class="theme-danger">ППППП</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-danger">19</th>
+      <td class="theme-danger">Удинезе</td>
+      <td class="theme-danger">10</td>
+      <td class="theme-danger">1</td>
+      <td class="theme-danger">2</td>
+      <td class="theme-danger">7</td>
+      <td class="theme-danger">11-23</td>
+      <td class="theme-danger">5</td>
+      <td class="theme-danger">ППППП</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-danger">20</th>
+      <td class="theme-danger">Венеция</td>
+      <td class="theme-danger">10</td>
+      <td class="theme-danger">1</td>
+      <td class="theme-danger">0</td>
+      <td class="theme-danger">9</td>
+      <td class="theme-danger">6-20</td>
+      <td class="theme-danger">3</td>
+      <td class="theme-danger">ППППП</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="d-flex gap-3 mt-3">
+  <div class="d-flex align-items-center gap-1">
+    <span style="display:inline-block; width:14px; height:14px; background-color:#198754; border-radius:2px;"></span>
+    <small>Зона Лиги чемпионов</small>
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <span style="display:inline-block; width:14px; height:14px; background-color:#0d6efd; border-radius:2px;"></span>
+    <small>Зона Лиги Европы</small>
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <span style="display:inline-block; width:14px; height:14px; background-color:#dc3545; border-radius:2px;"></span>
+    <small>Зона вылета</small>
+  </div>
+</div>
+
+<small>Дата обращения 05.11.2026 15:00</small> 
+
+<!-- Importmap для зависимостей Bootstrap 6 -->
+<script type="importmap">
+{
+  "imports": {
+    "@floating-ui/dom": "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.7.6/dist/floating-ui.dom.esm.min.js",
+    "vanilla-calendar-pro": "https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.4.0/index.mjs"
+  }
+}
+</script>
+
+<!-- JS Bootstrap 6 (без integrity) -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

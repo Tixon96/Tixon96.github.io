@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap 6 Alpha CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+    body {
+      background-color: #1a1a1a; /* тёмно-серый */
+      color: #ffffff;            /* белый текст */
+    }
+  </style>
+</head>
+
+
+
+
+<body>
+    <nav class="navbar lg:navbar-expand bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Навигация</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavMenu" aria-controls="navbarNavMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNavMenu" aria-labelledby="navbarNavMenuLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarNavMenuLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="main.html">Меню</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fotball.html">Лиги</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
+
+<br>
+<br>
+
+<!-- Второй навбар с сезонами -->
+<nav class="navbar lg:navbar-expand bg-1 fg-2 mb-3">
+  <div class="container-fluid">
+    <div class="navbar-nav flex-row gap-2">
+      <a class="nav-link active" aria-current="page">Сезоны</a>
+      <a class="nav-link" href="lalig.html">2026/2027</a>
+      <a class="nav-link" href="lalig24_25.html">2024/2025</a>
+      <a class="nav-link" href="lalig23_24.html">2023/2024</a>
+      <a class="nav-link" href="lalig22_23.html">2022/2023</a>
+    </div>
+  </div>
+</nav>
+
+<h4>Сезон 2025/2026</h4>
+
+<!-- Таблица турнира команд -->
+<table class="table">
+  <thead>
+    <tr>
+      <th>Место</th>
+      <th>Команда</th>
+      <th>И</th>
+      <th>В</th>
+      <th>Н</th>
+      <th>П</th>
+      <th>Мячи</th>
+      <th>Очки</th>
+      <th>Последние матчи</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- 1-4: зелёные (Лига Чемпионов) -->
+    <tr>
+      <th scope="row" class="theme-success">1</th>
+      <td class="theme-success">Барселона</td>
+      <td class="theme-success">38</td>
+      <td class="theme-success">31</td>
+      <td class="theme-success">1</td>
+      <td class="theme-success">6</td>
+      <td class="theme-success">95-36</td>
+      <td class="theme-success">94</td>
+      <td class="theme-success">ПВВВВ</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-success">2</th>
+      <td class="theme-success">Реал</td>
+      <td class="theme-success">38</td>
+      <td class="theme-success">27</td>
+      <td class="theme-success">5</td>
+      <td class="theme-success">6</td>
+      <td class="theme-success">77-35</td>
+      <td class="theme-success">86</td>
+      <td class="theme-success">ВВВВВ</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-success">3</th>
+      <td class="theme-success">Вильярреал</td>
+      <td class="theme-success">38</td>
+      <td class="theme-success">22</td>
+      <td class="theme-success">6</td>
+      <td class="theme-success">10</td>
+      <td class="theme-success">72-46</td>
+      <td class="theme-success">72</td>
+      <td class="theme-success">ПВППП</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-success">4</th>
+      <td class="theme-success">Атлетико</td>
+      <td class="theme-success">38</td>
+      <td class="theme-success">21</td>
+      <td class="theme-success">6</td>
+      <td class="theme-success">11</td>
+      <td class="theme-success">62-44</td>
+      <td class="theme-success">69</td>
+      <td class="theme-success">ВВПВП</td>
+    </tr>
+
+    <!-- 5: синяя (Лига Европы) -->
+    <tr>
+      <th scope="row" class="theme-primary">5</th>
+      <td class="theme-primary">Бетис</td>
+      <td class="theme-primary">38</td>
+      <td class="theme-primary">15</td>
+      <td class="theme-primary">15</td>
+      <td class="theme-primary">8</td>
+      <td class="theme-primary">59-48</td>
+      <td class="theme-primary">60</td>
+      <td class="theme-primary">ННППП</td>
+    </tr>
+
+    <!-- 6-17: без раскраски -->
+    <tr>
+      <th scope="row">6</th>
+      <td>Сельта</td>
+      <td>38</td>
+      <td>14</td>
+      <td>12</td>
+      <td>12</td>
+      <td>53-48</td>
+      <td>54</td>
+      <td>ВВВВВ</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Хетафе</td>
+      <td>38</td>
+      <td>15</td>
+      <td>6</td>
+      <td>17</td>
+      <td>32-38</td>
+      <td>51</td>
+      <td>ПНППП</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Райо Вальекано</td>
+      <td>38</td>
+      <td>12</td>
+      <td>14</td>
+      <td>12</td>
+      <td>41-44</td>
+      <td>50</td>
+      <td>ВНННП</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Валенсия</td>
+      <td>38</td>
+      <td>13</td>
+      <td>10</td>
+      <td>15</td>
+      <td>46-55</td>
+      <td>49</td>
+      <td>ППВВП</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Реал Сосьедад</td>
+      <td>38</td>
+      <td>11</td>
+      <td>13</td>
+      <td>14</td>
+      <td>59-61</td>
+      <td>46</td>
+      <td>ВПВПП</td>
+    </tr>
+    <tr>
+      <th scope="row">11</th>
+      <td>Эспаньол</td>
+      <td>38</td>
+      <td>12</td>
+      <td>10</td>
+      <td>16</td>
+      <td>43-55</td>
+      <td>46</td>
+      <td>ПНПВП</td>
+    </tr>
+    <tr>
+      <th scope="row">12</th>
+      <td>Атлетик Бильбао</td>
+      <td>38</td>
+      <td>13</td>
+      <td>6</td>
+      <td>19</td>
+      <td>43-58</td>
+      <td>45</td>
+      <td>ВППВП</td>
+    </tr>
+    <tr>
+      <th scope="row">13</th>
+      <td>Севилья</td>
+      <td>38</td>
+      <td>12</td>
+      <td>7</td>
+      <td>19</td>
+      <td>46-60</td>
+      <td>43</td>
+      <td>ВПППП</td>
+    </tr>
+    <tr>
+      <th scope="row">14</th>
+      <td>Алавес</td>
+      <td>38</td>
+      <td>11</td>
+      <td>10</td>
+      <td>17</td>
+      <td>44-56</td>
+      <td>43</td>
+      <td>ВПВПП</td>
+    </tr>
+    <tr>
+      <th scope="row">15</th>
+      <td>Эльче</td>
+      <td>38</td>
+      <td>10</td>
+      <td>13</td>
+      <td>15</td>
+      <td>49-57</td>
+      <td>43</td>
+      <td>ВПВПП</td>
+    </tr>
+    <tr>
+      <th scope="row">16</th>
+      <td>Леванте</td>
+      <td>38</td>
+      <td>11</td>
+      <td>9</td>
+      <td>18</td>
+      <td>47-61</td>
+      <td>42</td>
+      <td>ВПВПП</td>
+    </tr>
+    <tr>
+      <th scope="row">17</th>
+      <td>Осасуна</td>
+      <td>38</td>
+      <td>11</td>
+      <td>9</td>
+      <td>18</td>
+      <td>44-50</td>
+      <td>42</td>
+      <td>ППППП</td>
+    </tr>
+
+    <!-- 18-20: красные (Вылет) -->
+    <tr>
+      <th scope="row" class="theme-danger">18</th>
+      <td class="theme-danger">Мальорка</td>
+      <td class="theme-danger">38</td>
+      <td class="theme-danger">11</td>
+      <td class="theme-danger">9</td>
+      <td class="theme-danger">18</td>
+      <td class="theme-danger">47-57</td>
+      <td class="theme-danger">42</td>
+      <td class="theme-danger">ВПВВП</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-danger">19</th>
+      <td class="theme-danger">Жирона</td>
+      <td class="theme-danger">38</td>
+      <td class="theme-danger">9</td>
+      <td class="theme-danger">14</td>
+      <td class="theme-danger">15</td>
+      <td class="theme-danger">39-55</td>
+      <td class="theme-danger">41</td>
+      <td class="theme-danger">ППВПП</td>
+    </tr>
+    <tr>
+      <th scope="row" class="theme-danger">20</th>
+      <td class="theme-danger">Реал Овьедо</td>
+      <td class="theme-danger">38</td>
+      <td class="theme-danger">6</td>
+      <td class="theme-danger">11</td>
+      <td class="theme-danger">21</td>
+      <td class="theme-danger">26-60</td>
+      <td class="theme-danger">29</td>
+      <td class="theme-danger">ППППП</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Легенда -->
+<div class="d-flex flex-wrap gap-4 mt-2 mb-4">
+  <div class="d-flex align-items-center gap-1">
+    <span style="display:inline-block; width:14px; height:14px; background-color:#198754; border-radius:2px;"></span>
+    <small>Зона Лиги чемпионов</small>
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <span style="display:inline-block; width:14px; height:14px; background-color:#0d6efd; border-radius:2px;"></span>
+    <small>Зона Лиги Европы</small>
+  </div>
+  <div class="d-flex align-items-center gap-1">
+    <span style="display:inline-block; width:14px; height:14px; background-color:#dc3545; border-radius:2px;"></span>
+    <small>Зона вылета</small>
+  </div>
+</div>
+
+<!-- Таблица бомбардиров -->
+<h4 class="mt-4 mb-3">Лучшие бомбардиры</h4>
+<table class="table table-sm table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Место</th>
+      <th scope="col">Игрок</th>
+      <th scope="col">Клуб</th>
+      <th scope="col">Голы</th>
+      <th scope="col">Матчи</th>
+      <th scope="col">Мин/Гол</th>
+      <th scope="col">Пенальти</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Мбаппе</td>
+      <td>Реал Мадрид</td>
+      <td>25</td>
+      <td>31</td>
+      <td>104</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Мурики</td>
+      <td>Мальорка</td>
+      <td>23</td>
+      <td>37</td>
+      <td>136</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Будимир</td>
+      <td>Осасуна</td>
+      <td>17</td>
+      <td>37</td>
+      <td>173</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Ямаль</td>
+      <td>Барселона</td>
+      <td>16</td>
+      <td>28</td>
+      <td>141</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Ферран Торрес</td>
+      <td>Барселона</td>
+      <td>16</td>
+      <td>33</td>
+      <td>123</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Винисиус Жуниор</td>
+      <td>Реал Мадрид</td>
+      <td>16</td>
+      <td>36</td>
+      <td>176</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Ойарсабаль</td>
+      <td>Реал Сосьедад</td>
+      <td>15</td>
+      <td>34</td>
+      <td>180</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Тони Мартинес</td>
+      <td>Алавес</td>
+      <td>14</td>
+      <td>37</td>
+      <td>194</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Иглесиас</td>
+      <td>Сельта</td>
+      <td>14</td>
+      <td>35</td>
+      <td>135</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Левандовски</td>
+      <td>Барселона</td>
+      <td>14</td>
+      <td>31</td>
+      <td>118</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+<!-- Таблица ассистентов -->
+<h4 class="mt-4 mb-3">Лучшие ассистенты</h4>
+<table class="table table-sm table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Место</th>
+      <th scope="col">Игрок</th>
+      <th scope="col">Амплуа</th>
+      <th scope="col">М</th>
+      <th scope="col">ГП</th>
+      <th scope="col">КП</th>
+      <th scope="col">%ТП</th>
+      <th scope="col">%ТДП</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Ямаль</td>
+      <td>НАП</td>
+      <td>28</td>
+      <td>11</td>
+      <td>61</td>
+      <td>78</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Милья</td>
+      <td>ПЗ</td>
+      <td>37</td>
+      <td>10</td>
+      <td>68</td>
+      <td>71</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Лопес</td>
+      <td>ПЗ</td>
+      <td>30</td>
+      <td>9</td>
+      <td>25</td>
+      <td>84</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Педри</td>
+      <td>ПЗ</td>
+      <td>29</td>
+      <td>9</td>
+      <td>54</td>
+      <td>91</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Голер</td>
+      <td>ПЗ</td>
+      <td>33</td>
+      <td>9</td>
+      <td>61</td>
+      <td>85</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Эззальзули</td>
+      <td>НАП</td>
+      <td>29</td>
+      <td>8</td>
+      <td>24</td>
+      <td>75</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Пепе</td>
+      <td>НАП</td>
+      <td>36</td>
+      <td>8</td>
+      <td>46</td>
+      <td>78</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Ольмо</td>
+      <td>ПЗ</td>
+      <td>33</td>
+      <td>8</td>
+      <td>41</td>
+      <td>83</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Вальверде</td>
+      <td>ПЗ</td>
+      <td>33</td>
+      <td>8</td>
+      <td>35</td>
+      <td>89</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Рэшфорд</td>
+      <td>НАП</td>
+      <td>32</td>
+      <td>7</td>
+      <td>39</td>
+      <td>76</td>
+      <td>58</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Легенда к таблице ассистентов -->
+<div class="d-flex flex-wrap gap-4 mt-2 mb-4">
+  <div><small><strong>М</strong> - матчи</small></div>
+  <div><small><strong>ГП</strong> - голевые передачи</small></div>
+  <div><small><strong>КП</strong> - ключевые передачи</small></div>
+  <div><small><strong>%ТП</strong> - процент точных передач</small></div>
+  <div><small><strong>%ТДП</strong> - процент точных длинных передач</small></div>
+</div>
+
+<br>
+<!-- Таблица вратарей -->
+<h4 class="mt-4 mb-3">Вратари</h4>
+<table class="table table-sm table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Место</th>
+      <th scope="col">Игрок</th>
+      <th scope="col">Амплуа</th>
+      <th scope="col">М</th>
+      <th scope="col">С</th>
+      <th scope="col">С/М</th>
+      <th scope="col">СМ</th>
+      <th scope="col">ПГ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Гарсия</td>
+      <td>ВР</td>
+      <td>30</td>
+      <td>74</td>
+      <td>2.5</td>
+      <td>15</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Куртуа</td>
+      <td>ВР</td>
+      <td>32</td>
+      <td>70</td>
+      <td>2.2</td>
+      <td>13</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Сория</td>
+      <td>ВР</td>
+      <td>38</td>
+      <td>118</td>
+      <td>3.1</td>
+      <td>12</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Облак</td>
+      <td>ВР</td>
+      <td>30</td>
+      <td>75</td>
+      <td>2.5</td>
+      <td>11</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Баталья</td>
+      <td>ВР</td>
+      <td>34</td>
+      <td>92</td>
+      <td>2.7</td>
+      <td>11</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <th scope="row">6</th>
+      <td>Димитрович</td>
+      <td>ВР</td>
+      <td>37</td>
+      <td>133</td>
+      <td>3.6</td>
+      <td>10</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <th scope="row">7</th>
+      <td>Раду</td>
+      <td>ВР</td>
+      <td>38</td>
+      <td>113</td>
+      <td>3.0</td>
+      <td>10</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <th scope="row">8</th>
+      <td>Эскандель</td>
+      <td>ВР</td>
+      <td>36</td>
+      <td>148</td>
+      <td>4.1</td>
+      <td>10</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th scope="row">9</th>
+      <td>Райан</td>
+      <td>ВР</td>
+      <td>36</td>
+      <td>126</td>
+      <td>3.5</td>
+      <td>9</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <th scope="row">10</th>
+      <td>Вальес</td>
+      <td>ВР</td>
+      <td>28</td>
+      <td>88</td>
+      <td>3.1</td>
+      <td>8</td>
+      <td>36</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Легенда к таблице вратарей -->
+<div class="d-flex flex-wrap gap-4 mt-2 mb-4">
+  <div><small><strong>М</strong> - матчи</small></div>
+  <div><small><strong>С</strong> - сейвы</small></div>
+  <div><small><strong>С/М</strong> - сейвы за игру</small></div>
+  <div><small><strong>СМ</strong> - сухие матчи</small></div>
+  <div><small><strong>ПГ</strong> - пропущенные голы</small></div>
+</div>
+
+<!-- Importmap для зависимостей Bootstrap 6 -->
+<script type="importmap">
+{
+  "imports": {
+    "@floating-ui/dom": "https://cdn.jsdelivr.net/npm/@floating-ui/dom@1.7.6/dist/floating-ui.dom.esm.min.js",
+    "vanilla-calendar-pro": "https://cdn.jsdelivr.net/npm/vanilla-calendar-pro@3.4.0/index.mjs"
+  }
+}
+</script>
+
+<!-- JS Bootstrap 6 (без integrity) -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

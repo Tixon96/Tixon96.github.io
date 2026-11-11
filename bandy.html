@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandy</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #ffffff;
+
+            /* Фон */
+            background-image: url('bandyfon.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            /* Центрирование по вертикали и горизонтали */
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* по вертикали */
+            align-items: center;     /* по горизонтали */
+            text-align: center;      /* текст по центру */
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Карточки в ряд, с переносом и отступами */
+        .cards-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        /* Чтобы карточки не растягивались на всю ширину */
+        .card {
+            width: 320px;
+            text-align: left; /* текст внутри карточки по левому краю */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Хоккей с мячом</h1>
+
+    <div class="cards-wrapper">
+        <section class="card">
+            <img src="elits.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Шведская элитсерия</h4>
+                <p class="card-text">Шведская Элитсерия (Elitserien) — это высший дивизион чемпионата Швеции по хоккею с мячом (бенди) среди мужчин. Лига была основана в сезоне 2007/2008 годов и с тех пор является главной ареной для сильнейших клубов страны.</p>
+                <a href="elitserian.html" class="btn-solid theme-primary">Элитсерия</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="bndy_crd.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Bandy</h4>
+                <p class="card-text">Хоккей с мячом (также используется название бенди) — зимняя спортивная командная игра, которая проводится на ледяном поле. В ней участвуют две команды, в каждой из которых по 10 полевых игроков и одному вратарю. Цель — забить больше мячей (голов) в ворота соперника.</p>
+                <a href="https://ru.wikipedia.org/wiki/Хоккей_с_мячом" class="btn-solid theme-primary">Подробнее про бенди</a>
+            </div>
+        </section>
+
+        <section class="card">
+            <img src="Bandy_russian_F.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h4 class="card-title">Российская Супер лига</h4>
+                <p class="card-text">Супер лига - высший дивизион системы хоккейных (с мячом) лиг России — Чемпионат России по хоккею с мячом среди команд Суперлиги.</p>
+                <a href="rusbandy.html" class="btn-solid theme-primary">Суперлига</a>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
